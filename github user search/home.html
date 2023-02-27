@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>find GIT user </title>
+    <style>
+*{
+    box-sizing: border-box;
+}
+/* ==========BODY PART============== */
+body {
+    
+    background-image: url(parrish-freeman-K2W8TIxcuko-unsplash.jpg);
+    display:flex;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+/* ==========INPUT TYPE============== */
+input::placeholder{
+    color: #000102;
+}
+input:focus{
+    outline: none;
+}
+input{
+    background-color: #bcaed4;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    border: none;
+    color: rgb(223, 23, 23);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+/* ==========USER PART============== */
+.card{
+    background-image:  linear-gradient(315deg, #4c2885 0%, #4c11ac 100%);
+    border-radius: 20px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    display: flex;
+    padding: 3rem;
+    max-width: 800px;
+
+}
+
+.avatar {
+    border: 10px solid #2a2a72;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+
+}
+
+.user-info{
+    color: #32ec19;
+   margin-block-start: 2rem;
+
+}
+.user-info h2{
+    margin-top: 0;
+}
+.user-info li ul {
+    display: flex;
+    align-items: center;
+}
+.user-info ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding:0;
+    max-width: 400px;
+
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+/* ==========REPOSITORIES============== */
+.repo {
+    background-color:#d41ec5;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 10 px;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    color: rgb(29, 20, 20);
+}
+
+.text-main{
+    text-decoration: none;
+    color: black;
+}
+.ftext{
+    margin-top: 5rem;
+}
+</style>
+</head>
+<body>
+    <form id = "form">
+    <input type="text" id="search"
+    placeholder="Search a Github User"/>
+    </form>
+ <main id="main"></main>
+</body>
+<script type="text/javascript" src="mainpage.js"></script>
+</html>
